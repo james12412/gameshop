@@ -16,6 +16,8 @@ body {
     display: flex;
     flex-direction: row;
     height: 82px;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-btn-group {
     display: flex;
@@ -30,4 +32,8 @@ body {
     display: inline-block;
     padding: 5px;
     color: white;
+}
+
+.app-body {
+height: 978px;
 }
