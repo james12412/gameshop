@@ -7,7 +7,6 @@
     <title>Game shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
 
@@ -16,7 +15,7 @@
         <header class="navbar">
             <div class="logo"><img src="/assets/VideoGame_logo.png" alt="" srcset=""></div>
             <div class="nav-btn-group buttons">
-                <div class="button">Home</div>
+                <div class="button active">Home</div>
                 <div class="button">Shop</div>
                 <div class="button">Blog</div>
                 <div class="button">Contact Us</div>
@@ -27,24 +26,22 @@
                 <div class="icon"><img src="/assets/icons/ant-design_user-outlined.svg" alt=""></div>
 
             </div>
-        </header>
+            </header>
+    <div class="details">
+        <div class="title">
+            <h1>Headsets, keyboards, mice and gear for <span class="exag-text">focused</span> play.</h1>
+        </div>
+        <div class="cta-buttons">
+            <div class="shop">Shop Now</div>
+            <div class="watch">Watch video</div>
+        </div>
     </div>
-            <div id="app" class="app-body">{{ message }}</div>
+    </div>
+
+            
 
     <script src="/main.js" async defer></script>
 
-    <script>
-        const { createApp, ref } = Vue
-
-        createApp({
-            setup() {
-                const message = ref('Hello vue!')
-                return {
-                    message
-                }
-            }
-        }).mount('#app')
-    </script>
 </body>
 
 </html>
